@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Fines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <h1>Track Fines 💰</h1>
+        <div class="toolbar">
+            <input type="text" placeholder="Search by Member ID...">
+            <button class="action-btn">Search Fines</button>
+        </div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Member ID</th>
+                    <th>Book Title</th>
+                    <th>Fine Amount</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>MEMBER-001</td>
+                    <td>Project Hail Mary</td>
+                    <td>$2.50</td>
+                    <td><span class="status unpaid">Unpaid</span></td>
+                    <td><a href="#">Mark as Paid</a></td>
+                </tr>
+                <tr>
+                    <td>MEMBER-007</td>
+                    <td>A Brief History of Time</td>
+                    <td>$5.00</td>
+                    <td><span class="status unpaid">Unpaid</span></td>
+                    <td><a href="#">Mark as Paid</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <a href="dashboard.html" class="back-link">&larr; Back to Dashboard</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <h1>Book Management 📚</h1>
+        <div class="toolbar">
+            <input type="text" placeholder="Search by title, author, or ISBN...">
+            <button class="action-btn">Search</button>
+            <button class="action-btn primary">Add New Book</button>
+        </div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Midnight Library</td>
+                    <td>Matt Haig</td>
+                    <td>978-0735211292</td>
+                    <td><span class="status available">Available</span></td>
+                    <td><a href="#">Edit</a> | <a href="#" class="danger">Delete</a></td>
+                </tr>
+                <tr>
+                    <td>Project Hail Mary</td>
+                    <td>Andy Weir</td>
+                    <td>978-0593135204</td>
+                    <td><span class="status issued">Issued</span></td>
+                    <td><a href="#">Edit</a> | <a href="#" class="danger">Delete</a></td>
+                </tr>
+                 <tr>
+                    <td>Klara and the Sun</td>
+                    <td>Kazuo Ishiguro</td>
+                    <td>978-0593318171</td>
+                    <td><span class="status available">Available</span></td>
+                    <td><a href="#">Edit</a> | <a href="#" class="danger">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <a href="dashboard.html" class="back-link">&larr; Back to Dashboard</a>
+    </div>
+</body>
+</html>

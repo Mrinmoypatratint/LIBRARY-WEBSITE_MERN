@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 class="student-title">Student Dashboard</h1>
+    <div class="student-welcome">Welcome, Student!</div>
+    <section class="student-tools-card">
+      <h2 class="tools-title">Student Working Tools</h2>
+      <div class="student-tools-btn-row">
+        <button class="tools-btn" onclick="searchLibrary()">Search Library</button>
+        <button class="tools-btn" onclick="viewIssuedBooks()">View Issued Books</button>
+      </div>
+      <div class="student-tools-btn-row">
+        <button class="tools-btn" onclick="showFine()">Fine</button>
+        <button class="tools-btn" onclick="viewProfile()">View Profile</button>
+      </div>
+    </section>
+    <div id="toolArea"></div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </main>
+  <footer>&copy; 2025 Library Management</footer>
+  <script src="script.js"></script>
+</body>
+</html>

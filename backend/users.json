@@ -1,0 +1,7 @@
+[
+  { "role": "admin", "username": "admin1", "password": "adminpass" },
+  { "role": "student", "username": "student1", "password": "studentpass" },
+  { "role": "teacher", "username": "teacher1", "password": "teacherpass" },
+  { "role": "student", "username": "Anamika", "password": "Anamika123", "Id": "S123" },
+  { "role": "assistant", "username": "assistant1", "password": "assistantpass", "Id": "A001" }
+]

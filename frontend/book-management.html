@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <h1>Book Management 📚</h1>
+        <div class="toolbar">
+            <input type="text" placeholder="Search by title, author, or ISBN..." id="bookSearchInput">
+            <button class="action-btn" onclick="searchBooksInTable()">Search</button>
+            <button class="action-btn primary" onclick="showAddBookModal()">Add New Book</button>
+        </div>
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Books will be loaded by JavaScript -->
+            </tbody>
+        </table>
+        
+        <button onclick="backToDashboard()" class="back-link" style="background: #6c757d; color: white; border: none; padding: 0.8em 1.5em; border-radius: 6px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 1em;">
+            ← Back to Dashboard
+        </button>
+    </div>
+
+    <!-- Include the Add Book Modal here as well -->
+    <div id="addBookModal" class="modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; overflow:auto; background-color:rgba(0,0,0,0.5);">
+        <div class="modal-content" style="background-color:#fefefe; margin:3% auto; padding:2em; border:none; border-radius:12px; width:90%; max-width:500px; box-shadow: 0 8px 32px rgba(0,0,0,0.3);">
+            <span class="close" onclick="closeAddBookModal()" style="color:#aaa; float:right; font-size:28px; font-weight:bold; cursor:pointer; line-height:1;">&times;</span>
+            <h3 style="margin: 0 0 1.5em 0; color: #2c3e50;">📚 Add New Book</h3>
+            <form id="addBookForm" onsubmit="submitAddBook(event)" style="text-align: left;">
+                <div style="margin-bottom: 1em;">
+                    <label style="display: block; margin-bottom: 0.5em; font-weight: 600; color: #495057;">Title:</label>
+                    <input type="text" id="bookTitle" required style="width: 100%; padding: 0.8em; border: 2px solid #bde0fe; border-radius: 8px; font-size: 1em; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 1em;">
+                    <label style="display: block; margin-bottom: 0.5em; font-weight: 600; color: #495057;">Author:</label>
+                    <input type="text" id="bookAuthor" required style="width: 100%; padding: 0.8em; border: 2px solid #bde0fe; border-radius: 8px; font-size: 1em; box-sizing: border-box;">
+                </div>
+                <div style="margin-bottom: 1.5em;">
+                    <label style="display: block; margin-bottom: 0.5em; font-weight: 600; color: #495057;">ISBN:</label>
+                    <input type="text" id="bookISBN" required style="width: 100%; padding: 0.8em; border: 2px solid #bde0fe; border-radius: 8px; font-size: 1em; box-sizing: border-box;">
+                </div>
+                <div style="display: flex; gap: 0.8em;">
+                    <button type="submit" style="flex: 1; background: #28a745; color: white; border: none; padding: 0.8em; border-radius: 8px; cursor: pointer; font-size: 1em; font-weight: 600;">Add Book</button>
+                    <button type="button" onclick="closeAddBookModal()" style="flex: 1; background: #6c757d; color: white; border: none; padding: 0.8em; border-radius: 8px; cursor: pointer; font-size: 1em;">Cancel</button>
+                </div>
+            </form>
+            <div id="addBookMsg" style="margin-top: 1em;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

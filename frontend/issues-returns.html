@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Issues & Returns</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <h1>Manage Issues & Returns 🔄</h1>
+        <div class="split-container">
+            <div class="form-container">
+                <h2>Issue a Book</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="issue-book-id">Book ID or ISBN</label>
+                        <input type="text" id="issue-book-id" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="member-id">Member ID</label>
+                        <input type="text" id="member-id" required>
+                    </div>
+                    <button type="submit" class="action-btn primary">Issue Book</button>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <h2>Process a Return</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="return-book-id">Book ID or ISBN</label>
+                        <input type="text" id="return-book-id" required>
+                    </div>
+                    <button type="submit" class="action-btn">Process Return</button>
+                </form>
+            </div>
+        </div>
+        <a href="dashboard.html" class="back-link">&larr; Back to Dashboard</a>
+    </div>
+</body>
+</html>

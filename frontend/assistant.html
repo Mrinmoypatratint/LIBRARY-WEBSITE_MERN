@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assistant Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1 class="assistant-title">Assistant Dashboard</h1>
+    <div class="assistant-welcome">Welcome, Assistant!</div>
+    <section class="assistant-tools-card">
+      <h2 class="tools-title">Assistant Working Tools</h2>
+      <div class="assistant-tools-btn-row">
+        <button class="tools-btn" onclick="showMaintenance()">Maintenance</button>
+        <button class="tools-btn" onclick="showAdminTask()">Administrative Task</button>
+      </div>
+      <div class="assistant-tools-btn-row">
+        <button class="tools-btn" onclick="showCardIssue()">Library Card Issue</button>
+        <button class="tools-btn" onclick="showCollectFine()">Collect Fine</button>
+      </div>
+    </section>
+    <div id="toolArea"></div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </main>
+  <footer>&copy; 2025 Library Management</footer>
+  <script src="script.js"></script>
+</body>
+</html>

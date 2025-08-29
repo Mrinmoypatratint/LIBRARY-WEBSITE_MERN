@@ -1,0 +1,15 @@
+<!-- Add this inside your admin-dashboard.html, below the buttons -->
+<div id="addBookModal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="closeAddBookModal()">&times;</span>
+    <button class="tools-btn" onclick="searchLibrary()">Search Library</button>
+    <h3>Add Book</h3>
+    <form id="addBookForm" onsubmit="submitAddBook(event)">
+      <label>Title:</label><input type="text" id="bookTitle" required><br>
+      <label>Author:</label><input type="text" id="bookAuthor" required><br>
+      <label>ISBN:</label><input type="text" id="bookISBN" required><br>
+      <button type="submit">Add</button>
+    </form>
+    <div id="addBookMsg"></div>
+  </div>
+</div>
